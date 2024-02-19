@@ -80,7 +80,7 @@ def main():
         print("2) Add Book")
         print("3) Remove Book")
         print("4) Remove All Books")
-        print("5) Exit")
+        print("q) Exit")
 
         choice = input("Enter your choice: ")
 
@@ -92,7 +92,7 @@ def main():
             lib.remove_book()
         elif choice == "4":
             lib.remove_all_books()
-        elif choice == "5":
+        elif choice.lower() == "q":
             break
         else:
             print("Invalid choice. Please try again.")
